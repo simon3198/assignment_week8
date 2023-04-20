@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+for i in {a..z}
+do cd files
+
+mv "$i"* ../"$i"
+mv "${i^}"* ../"$i"
+
+cd ..
+done
+
